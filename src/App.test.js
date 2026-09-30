@@ -25,13 +25,13 @@ test("Navigation links are present", () => {
 
   expect(
     screen.getByRole("link", {
-      name: /about us/i
+      name: /about/i
     })
   ).toBeInTheDocument();
 
   expect(
     screen.getByRole("link", {
-      name: /contact us/i
+      name: /contacts/i
     })
   ).toBeInTheDocument();
 });
